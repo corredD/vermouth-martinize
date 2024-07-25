@@ -21,6 +21,7 @@ Provides Processors, VerMoUTH's work horses.
 from .gro_reader import GROInput
 from .make_bonds import MakeBonds
 from .pdb_reader import PDBInput
+from .cif_reader import CIFInput
 from .repair_graph import RepairGraph
 from .do_mapping import DoMapping
 from .do_links import DoLinks

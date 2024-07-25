@@ -6,3 +6,4 @@ setuptools >= 30.3.0
 numpy
 networkx ~= 2.0
 scipy
+gemmi

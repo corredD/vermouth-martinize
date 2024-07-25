@@ -28,7 +28,7 @@ import numpy as np
 
 #PATH = '../molecules/cycliclipopeptide_2.pdb'
 #PATH = '../molecules/cyclicpeptide_2.pdb'
-PATH = '../molecules/glkfk.pdb'
+PATH = 'G:\\Dev\\molecules\\1ubq.pdb'
 #PATH = '../molecules/6-macro-8_cartwheel.gro'
 #PATH = '../molecules/6-macro-16.gro'
 #PATH = '../molecules/6-macro-16-rtc-eq-nodisre.pdb'
@@ -41,9 +41,9 @@ system = System()
 ext = osp.splitext(PATH)[-1]
 
 if ext.casefold() == '.pdb':
-    PDBInput().run_system(system, PATH)
+    PDBInput(PATH).run_system(system)
 elif ext.casefold() == '.gro':
-    GROInput().run_system(system, PATH)
+    GROInput(PATH).run_system(system)
 else:
     raise RuntimeError
 MakeBonds().run_system(system)
